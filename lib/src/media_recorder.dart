@@ -7,6 +7,8 @@ abstract class MediaRecorder {
   /// For iOS use audioTrack
   Future<void> start(
     String path, {
+    int? videoWidth,
+    int? videoHeight,
     MediaStreamTrack? videoTrack,
     RecorderAudioChannel? audioChannel,
   });
